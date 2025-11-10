@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00091a; /* darker blue */
+  color: #ffffff;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.message {
+  font-size: 2.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+.calin-gif {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
